@@ -1,0 +1,66 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission__container {
+    background-color: $primary;
+    border-radius: 50px;
+    min-height: 800px;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.white__line {
+    div {
+        width: 80%;
+        height: 2px;
+        background: $white;
+        margin: auto;
+        margin-top: 10%;
+    }
+}
+.white__line__bottom {
+    div {
+        width: 80%;
+        height: 2px;
+        background: $white;
+        margin: auto;
+        margin-top: 5%;
+    }
+}
+
+.content__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        height: 30em;
+    }
+}
+
+.content__column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+
+
+    h2 {
+        font-color: $background;
+        font-size: 64px;
+        text-align: left;
+    }
+
+    p {
+        font-color: $background;
+        font-size: 24px;
+    }
+}

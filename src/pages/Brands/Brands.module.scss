@@ -1,0 +1,41 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    background: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.width__container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 64px;
+        color: $background;
+    }
+
+    p {
+        margin-top: -2%;
+        font-size: 26px;
+        color: $background;
+        line-height: 50px;
+    }
+}
+
+.brand__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        width: 12em;
+        margin: 50px;
+    }
+}

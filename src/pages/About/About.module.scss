@@ -1,0 +1,54 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        height: 15em;
+        width: 15em;
+        border-radius: 360px;
+        padding: 20px;
+    }
+}
+
+.image__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: 15em;
+        width: 15em;
+        border-radius: 360px;
+        padding: 20px;
+    }
+}
+
+.content__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    h2 {
+        font-size: 64px;
+        color: $white;
+
+    }
+}
+
+.divider {
+    width: 50%;
+}
