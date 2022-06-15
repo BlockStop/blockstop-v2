@@ -1,0 +1,81 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    background: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+
+    p {
+        font-size: 12px;
+        color: $background;
+    }
+
+    button {
+        color: $white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        background-color: $background;
+        font-family: Siracha-Regular;
+        font-size: 18px;
+        font-weight: 600px;
+        outline: none;
+        border: none;
+        transition: all 220ms ease-in-out;
+        position: relative;
+        cursor: pointer;
+        margin: 25px;
+
+    }
+
+    img {
+        height: 2em;
+        margin: 25px;
+    }
+
+    h2 {
+        color: $background;
+        font-size: 48px;
+    }
+}
+
+.content__col__one {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 12px;
+        color: $background;
+    }
+
+    button {
+        color: $white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        background-color: $background;
+        font-family: Siracha-Regular;
+        font-size: 18px;
+        font-weight: 600px;
+        outline: none;
+        border: none;
+        transition: all 220ms ease-in-out;
+        position: relative;
+        cursor: pointer;
+        margin: 25px;
+
+    }
+
+    img {
+        height: 2em;
+        margin: 25px;
+    }
+}

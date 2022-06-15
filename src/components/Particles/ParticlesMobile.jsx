@@ -5,7 +5,7 @@ import { useCallback, useMemo } from "react";
 
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
 // tsParticles Website: https://particles.js.org/
-const ParticlesComponent = (props) => {
+const ParticlesComponentMobile = (props) => {
   // using useMemo is not mandatory, but it's recommended since this value can be memoized if static
   const options = useMemo(() => {
     // using an empty options object will load the default options, which are static particles with no background and 3px radius, opacity 100%, white color
@@ -33,7 +33,7 @@ const ParticlesComponent = (props) => {
       particles: {
         links: {
           enable: true, // enabling this will make particles linked together
-          distance: 130, // maximum distance for linking the particles
+          distance: 75, // maximum distance for linking the particles
           triangles: {
             enable: true,
             opacity: 0.1,
@@ -41,13 +41,13 @@ const ParticlesComponent = (props) => {
         },
         move: {
           enable: true, // enabling this will make particles move in the canvas
-          speed: { min: 0.5, max: 3 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
+          speed: { min: 0.2, max: 1 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
         },
         opacity: {
           value: { min: 0.1, max: 0.5 }, // using a different opacity, to have some semitransparent effects
         },
         size: {
-          value: { min: 1, max: 3 }, // let's randomize the particles size a bit
+          value: { min: 0.2, max: 0.8 }, // let's randomize the particles size a bit
         },
       },
     };
@@ -63,4 +63,4 @@ const ParticlesComponent = (props) => {
   return <Particles id={props.id} init={particlesInit} options={options} />;
 };
 
-export default ParticlesComponent;
+export default ParticlesComponentMobile;

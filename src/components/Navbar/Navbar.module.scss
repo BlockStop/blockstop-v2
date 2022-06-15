@@ -11,6 +11,12 @@
     justify-content: space-between;
     background: transparent;
     min-height: 100px;
+
+    @media screen and (max-width: 850px) {
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .nav.light {
@@ -98,6 +104,10 @@
     flex-direction: row;
     align-items: center;
     margin-right: 7.5%;
+
+    @media screen and (max-width: 850px) {
+        margin-right: 0%;
+    }
 
     img {
         height: 2em;

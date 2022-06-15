@@ -1,0 +1,120 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    background: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+}
+
+.content__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+
+    @media screen and (max-width: 850px) {
+        display: inline-block;
+        width: 100%;
+        height: 500px;
+        align-items: left;
+        text-align: center;
+    }
+
+    img {
+        height: 100%;
+    }
+}
+
+.content_column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -10%;
+
+    h2 {
+        font-size: 56px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+.divider {
+    width: 40%;
+    margin-left: 20%;
+
+    @media screen and (min-width: 850px) and (max-width: 1400px) {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    @media screen and (max-width: 850px) {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+
+    img {
+        height: 3em;
+        position: relative;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.mobile__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+
+
+    h2 {
+        font-color: $background;
+        font-size: 32px;
+    }
+
+    p {
+        font-color: $background;
+        font-size: 18px;
+    }
+
+    img {
+        width: 12em;
+    }
+
+}
+
+.mobile__content__column {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-top: 5%;
+
+
+    h2 {
+        font-color: $background;
+        font-size: 28px;
+    }
+
+    p {
+        font-color: $background;
+        font-size: 18px;
+    }
+
+    img {
+        width: 12em;
+    }
+}

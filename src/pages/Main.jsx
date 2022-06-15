@@ -3,6 +3,10 @@ import HomePage from './Home/HomePage';
 import About from './About/About';
 import Brands from './Brands/Brands';
 import Mission from './Mission/Mission';
+import Services from './Services/Services';
+import Partners from './Partners/Partners';
+import Team from './Team/Team';
+import Footer from './Footer/Footer';
 
 function Main() {
   return (
@@ -11,6 +15,10 @@ function Main() {
       <About />
       <Brands />
       <Mission />
+      <Services />
+      <Partners />
+      <Team />
+      <Footer />
     </React.Fragment>
   )
 }

@@ -2,32 +2,33 @@
 
 .page {
     width: 100%;
-    background: $primary;
+    background: $background;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .width__container {
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 5%;
+
     @media screen and (max-width: 850px) {
         margin-top: 10%;
         display: inline-block;
         width: 90%;
         align-items: center;
-        text-align: left;
+        text-align: center;
         margin: auto;
     }
 
     h3 {
         font-size: 64px;
-        color: $background;
+        color: $white;
 
         @media screen and (max-width: 850px) {
             font-size: 32px;
@@ -38,7 +39,7 @@
     p {
         margin-top: -2%;
         font-size: 26px;
-        color: $background;
+        color: $white;
         line-height: 50px;
 
         @media screen and (max-width: 850px) {
@@ -48,21 +49,39 @@
     }
 }
 
-.brand__row {
+.team__row {
     display: flex;
     flex-direction: row;
-    align-items: center;
-
     @media screen and (max-width: 850px) {
+        margin-top: 10%;
         display: inline-block;
-        width: 100%;
+        width: 90%;
         align-items: center;
         text-align: center;
         margin: auto;
     }
 
     img {
-        width: 12em;
-        margin: 50px;
+        width: 15em;
+        height: 15em;
+        border-radius: 360px;
+
     }
+
+    h4 {
+        font-size: 28px;
+        color: $white;
+        @media screen and (max-width: 850px) {
+            font-size: 20px;
+
+        }
+    }
+}
+
+.individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
 }

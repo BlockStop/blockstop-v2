@@ -1,0 +1,47 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $secondary;
+    height: 400px;
+}
+
+.page.dark {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $tertiary;
+    height: 400px;
+
+}
+
+
+.content_column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    @media screen and (max-width: 850px) {
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 56px;
+
+        @media screen and (max-width: 850px) {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        font-size: 24px;
+
+        @media screen and (max-width: 850px) {
+            font-size: 18px;
+        }
+    }
+}
