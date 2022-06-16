@@ -5,6 +5,7 @@
 @font-face {
   font-family:'good-times';
   src: local('good-times'), url(./styles/fonts/good-times-rg.ttf) format('truetype');
+  font-display: block;
 }
 
 body {
