@@ -10,13 +10,12 @@ function Footer() {
 
             <div className={styles.content__col}>
                 <h2>Delivering NFT Projects the Right Way.</h2>
-                <button> Let's Connect </button>
+                <a href = "https://gf144bwmy12.typeform.com/to/hcPphVaO"><button> Let's Connect </button> </a>
                 <div className={styles.content__row}>
-                <img src={TwitterImg} />
-                <img src={InstaImg} />
+                <a href = "https://twitter.com/CHFTYPizzas"> <img src={TwitterImg}/> </a>
+                <a href = "https://twitter.com/CHFTYPizzas"> <img src={InstaImg}/> </a>
                 </div>
             </div>
-      
     </div>
   )
 }

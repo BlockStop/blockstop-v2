@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import ParticlesComponent from "../../components/Particles/Particles";
 import ParticlesComponentMobile from "../../components/Particles/ParticlesMobile";
-import BlockStopLogo from "../../assets/blockstop-logo.webp";
+import BlockStopLogo from "../../assets/bstop-logo.webp";
 import styles from "./HomePage.module.scss";
 import { useMediaQuery } from "react-responsive";
 import Particles from "react-tsparticles";

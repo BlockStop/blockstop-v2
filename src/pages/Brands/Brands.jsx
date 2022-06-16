@@ -11,7 +11,7 @@ function Brands() {
     <div className={styles.page}>
         <div className={styles.width__container}>
             <h3>Guiding Established Companies and Brands into Web3</h3>
-            <p>BlockStop is trusted by high profile individuals and brands. We pride ourselves on bringing them into Web3 with proper authenticity so they truly immerse themselves and become part of the ecosystem </p>
+            <p>BlockStop is trusted by high profile individuals and brands. We pride ourselves on bringing them into Web3 in such a way where they truly immerse themselves and become part of the ecosystem </p>
             <div className={styles.brand__row}>
                 <img src={DolphinLogo} />
                 <img src={CraftLogo} />

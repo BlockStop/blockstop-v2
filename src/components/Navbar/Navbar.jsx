@@ -29,7 +29,7 @@ const Navbar = (props) => {
                 <div className={`${styles.row} ${props.isLight && styles.light}`}>
                     <a href = "https://twitter.com/CHFTYPizzas"> <img src={TwitterImg}/> </a>
                     <a href = "https://twitter.com/CHFTYPizzas"> <img src={InstaImg}/> </a>
-                    <Link to="/menu"> <button> Let's Connect </button> </Link>
+                    <a href = "https://gf144bwmy12.typeform.com/to/hcPphVaO"> <button> Let's Connect </button> </a>
                 </div>
             
             {/* {isMobile && 

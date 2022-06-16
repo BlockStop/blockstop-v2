@@ -67,8 +67,8 @@
         padding: 8px 20px;
         border-radius: 5px;
         background-color: transparent;
-        font-family: Siracha-Regular;
-        font-size: 18px;
+        font-family: "good-times";
+        font-size: 16px;
         outline: none;
         border: none;
         position: relative;
@@ -111,6 +111,11 @@
     img {
         height: 2em;
         margin: 25px;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform:scale(1.2, 1.2);
+        }
     }
 
     button {
@@ -118,7 +123,6 @@
         padding: 8px 20px;
         border-radius: 20px;
         background-color: $primary;
-        font-family: Siracha-Regular;
         font-size: 18px;
         font-weight: 600px;
         outline: none;
@@ -128,7 +132,11 @@
         cursor: pointer;
         margin: 25px;
 
-        
+        &:hover {
+            background-color: #000000;
+            border: none;
+            color: #FFFFFF;
+          }
 
         &::after{
             content: '';
