@@ -1,0 +1,167 @@
+@import "../../styles/base/settings.scss";
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 3;
+    
+}
+
+.innerpop {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    width: 400px;
+    background-color: $white;
+    border: 3px solid $black;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 3;
+
+    button {
+      background: transparent;
+    }
+
+    @media screen and (max-width: 850px) {
+        max-width: 95%;
+        height: 650px;
+        width: 350px;
+      }
+}
+
+.innerpop .closebtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    background-color: $background;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgwrap {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    img {
+      height: 3.5em;
+    }
+}
+
+.title {
+
+    h3 {
+        font-size: 50px;
+        font-family: Siracha-Regular;
+        letter-spacing: 0.07em;
+        color: $background;
+        margin-left: 10%;
+
+        @media screen and (max-width: 850px) {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-bottom: 3%;
+          }
+    }
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+  
+    @media screen and (min-width: 850px) and (max-width: 1250px) {
+      width: 85%;
+    }
+  
+    @media screen and (max-width: 850px) {
+      display: inline-block;
+      width: 90%;
+    }
+  }
+  
+  .img__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+    img {
+      width: 300px;
+      height: 300px;
+      align-items: center;
+      margin-top: 3%;
+      border-radius: 25px;
+
+  
+      @media screen and (max-width: 850px) {
+        width: 275px;
+        height: 275px;
+      }
+    }
+  }
+
+  .text__container {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+
+    h4 {
+      margin-block-end: 0px;
+      font-size: 24px!important;
+      color: $background!important;
+    }
+
+    h5 {
+      margin-block-start: 0.3em;
+      font-size: 12px!important;
+      color: $background!important;
+    }
+
+    p {
+      font-size: 18px!important;
+      color: $background!important;
+      line-height: 20px!important;
+    }
+  }
+
+  .status {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+
+    p {
+        font-family: Ubuntu-Regular;
+        font-size: 20px;
+        text-align: left;
+        color: $background;
+    
+        @media screen and (max-width: 850px) {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+  }

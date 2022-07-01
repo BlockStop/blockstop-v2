@@ -20,10 +20,6 @@ const ParticlesComponentMobile = (props) => {
       },
       interactivity: {
         events: {
-          onClick: {
-            enable: true, // enables the click event
-            mode: "push", // adds the particles on click
-          },
           onHover: {
             enable: true, // enables the hover event
             mode: "grab", // make the particles run away from the cursor

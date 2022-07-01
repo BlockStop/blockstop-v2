@@ -6,7 +6,22 @@
     flex-direction: column;
     align-items: center;
     background: $secondary;
-    height: 400px;
+    min-height: 400px;
+
+    img {
+        height: 50px;
+        margin-left: 80%;
+        margin-top: 1%;
+    }
+
+    @media screen and (min-width: 850px) and (max-width: 1400px) {
+        min-height: 500px;
+
+    }
+
+    @media screen and (max-width: 850px) {
+        min-height: 100%;
+    }
 }
 
 .page.dark {
@@ -15,8 +30,21 @@
     flex-direction: column;
     align-items: center;
     background: $tertiary;
-    height: 400px;
+    min-height: 400px;
 
+    img {
+        height: 50px;
+        margin-left: 80%;
+        margin-top: 1%;
+    }
+
+    @media screen and (min-width: 850px) and (max-width: 1400px) {
+        min-height: 500px;
+    }
+
+    @media screen and (max-width: 850px) {
+        min-height: 100%;
+    }
 }
 
 
@@ -25,8 +53,11 @@
     flex-direction: column;
     text-align: left;
     width: 90%;
+    margin-top: -5%;
     @media screen and (max-width: 850px) {
         margin: auto;
+        margin-top: -5%;
+
     }
 
     h2 {
@@ -43,5 +74,13 @@
         @media screen and (max-width: 850px) {
             font-size: 18px;
         }
+    }
+}
+
+.comp__img {
+    margin-left: 90%;
+    
+    svg {
+        height: 40px;
     }
 }
