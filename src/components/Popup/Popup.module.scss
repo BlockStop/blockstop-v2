@@ -146,6 +146,20 @@
       color: $background!important;
       line-height: 20px!important;
     }
+
+    a {
+      img {
+
+          height: 2em;
+          margin: 25px;
+          transition: transform 0.2s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+              transform:scale(1.2, 1.2);
+          }
+      }
+    }
   }
 
   .status {

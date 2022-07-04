@@ -2,10 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { RoadmapContent } from '../../text/RoadmapContent';
 import Popup from '../../components/Popup/Popup';
 import FullRoadmapItem from '../../components/FullRoadmapItem/FullRoadmapItem';
-import ThomasPic from '../../assets/thomasclone.webp';
-import JaredPic from '../../assets/dape.webp';
-import SeanPic from '../../assets/seanbird.webp';
-import NickPic from '../../assets/potoclone.webp';
 import styles from './Team.module.scss';
 
 function Team() {
@@ -14,6 +10,7 @@ function Team() {
     const [popupTitle, setPopupTitle] = useState('');
     const [popupImg, setPopupImg] = useState('');
     const [popupBio, setPopupBio] = useState('');
+    const [popupTwitter, setPopupTwitter] = useState('');
     const [number, setNumber] = useState('0');
     
     useEffect(() => {
@@ -21,6 +18,7 @@ function Team() {
       setPopupTitle(RoadmapContent.content[number]['title'])
       setPopupBio(RoadmapContent.content[number]['bio'])
       setPopupImg(RoadmapContent.content[number]['imgUrl'])
+      setPopupTwitter(RoadmapContent.content[number]['twitter'])
     }, [number, buttonPopup])
 
   return (
@@ -29,7 +27,7 @@ function Team() {
             <h3>The Team</h3>
             <div className={styles.team__row}>
                 <div className={styles.individual}>
-                    <FullRoadmapItem num='0' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber} teamImage={"https://vsprblockchain.s3.amazonaws.com/thomas-ape.webp"} headshot={"https://vsprblockchain.s3.amazonaws.com/thomas-pic.png"}/>
+                    <FullRoadmapItem num='0' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber} teamImage={"https://vsprblockchain.s3.amazonaws.com/primate.png"} headshot={"https://vsprblockchain.s3.amazonaws.com/thomas-pic.png"}/>
                     <h4>Thomas Cadle</h4>
                 </div>
 
@@ -57,7 +55,7 @@ function Team() {
             </div>
 
             <div className={styles.popup}>
-            <Popup trigger={buttonPopup} setTrigger={setButtonPopup} name={popupName} title={popupTitle} popupImg={popupImg} bio={popupBio}/>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup} name={popupName} title={popupTitle} popupImg={popupImg} bio={popupBio} twitter={popupTwitter}/>
             </div>
 
         </div>

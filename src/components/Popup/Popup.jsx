@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../Logo/Logo';
 import LogoImg from '../../assets/logo-small.webp';
 import Fade from 'react-reveal/Fade';
+import TwitterImg from '../../assets/twitter-48.png';
 import styles from './Popup.module.scss';
 
 function Popup(props) {
@@ -24,6 +25,10 @@ function Popup(props) {
                 <h4>{props.name}</h4>
                 <h5>{props.title}</h5>
                 <p>{props.bio}</p>
+
+                <a href={props.twitter} >
+                    <img src={TwitterImg} />
+                </a>
             </div>
 
 

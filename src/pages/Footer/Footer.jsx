@@ -12,8 +12,8 @@ function Footer() {
                 <h2>Delivering NFT Projects the Right Way.</h2>
                 <a href = "https://gf144bwmy12.typeform.com/to/hcPphVaO"><button> Let's Connect </button> </a>
                 <div className={styles.content__row}>
-                <a href = "https://twitter.com/CHFTYPizzas"> <img src={TwitterImg}/> </a>
-                <a href = "https://twitter.com/CHFTYPizzas"> <img src={InstaImg}/> </a>
+                <a href = "https://twitter.com/BlockStopXYZ"> <img src={TwitterImg}/> </a>
+                <a href = "https://www.blockstop.xyz/"> <img src={InstaImg}/> </a>
                 </div>
             </div>
     </div>
