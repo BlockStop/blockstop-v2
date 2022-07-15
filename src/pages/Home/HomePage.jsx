@@ -5,6 +5,7 @@ import ParticlesComponentMobile from "../../components/Particles/ParticlesMobile
 import BlockStopLogo from "../../assets/bstop-logo.webp";
 import styles from "./HomePage.module.scss";
 import { useMediaQuery } from "react-responsive";
+import Loader from 'react-loaders'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -16,6 +17,7 @@ const HomePage = (props) => {
     };
 
     return(
+        <>
     <div className={styles.page}>
         <section className={styles.page__filter}>
             <Navbar />
@@ -34,6 +36,7 @@ const HomePage = (props) => {
             <div />
         </div>
     </div> 
+    </>
     );
 }
 

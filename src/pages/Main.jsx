@@ -7,6 +7,8 @@ import Services from './Services/Services';
 import Partners from './Partners/Partners';
 import Team from './Team/Team';
 import Footer from './Footer/Footer';
+import Loader from 'react-loaders'
+
 
 function Main() {
   return (

@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import CustomLoader from "./components/CustomLoader/CustomLoader";
-import './App.css';
+import './App.scss';
 
 const MainPage = React.lazy(() => import('./pages/Main'));
 
@@ -14,7 +14,7 @@ function App(props) {
             <Route path='/' element={<MainPage />} />
         </Routes>
       </Router>
-    </Suspense>
+     </Suspense>
   );
 }
 
